@@ -503,7 +503,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					
-					<!-- Kids buttons -->
+					<!-- Master buttons -->
 					<control type="label" id="230">
 						<width>750</width>
 						<height>45</height>
@@ -522,8 +522,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31111] - $LOCALIZE[3]</label>
-						<onclick>Skin.ToggleSetting(KidsHomeMenuNoVideosButton)</onclick>
-						<selected>Skin.HasSetting(KidsHomeMenuNoVideosButton)</selected>
+						<onclick>Skin.ToggleSetting(MasterHomeMenuNoVideosButton)</onclick>
+						<selected>Skin.HasSetting(MasterHomeMenuNoVideosButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -535,8 +535,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31111] - $LOCALIZE[20342] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
-						<onclick>Skin.ToggleSetting(KidsHomeMenuNoMovieButton)</onclick>
-						<selected>Skin.HasSetting(KidsHomeMenuNoMovieButton)</selected>
+						<onclick>Skin.ToggleSetting(MasterHomeMenuNoMovieButton)</onclick>
+						<selected>Skin.HasSetting(MasterHomeMenuNoMovieButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Library.HasContent(Movies)</enable>
@@ -549,8 +549,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31111] - $LOCALIZE[20343] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
-						<onclick>Skin.ToggleSetting(KidsHomeMenuNoTVShowButton)</onclick>
-						<selected>Skin.HasSetting(KidsHomeMenuNoTVShowButton)</selected>
+						<onclick>Skin.ToggleSetting(MasterHomeMenuNoTVShowButton)</onclick>
+						<selected>Skin.HasSetting(MasterHomeMenuNoTVShowButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Library.HasContent(TVShows)</enable>
@@ -563,8 +563,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31111] - $LOCALIZE[2]</label>
-						<onclick>Skin.ToggleSetting(KidsHomeMenuNoMusicButton)</onclick>
-						<selected>Skin.HasSetting(KidsHomeMenuNoMusicButton)</selected>
+						<onclick>Skin.ToggleSetting(MasterHomeMenuNoMusicButton)</onclick>
+						<selected>Skin.HasSetting(MasterHomeMenuNoMusicButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -576,8 +576,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31111] - $LOCALIZE[1]</label>
-						<onclick>Skin.ToggleSetting(KidsHomeMenuNoPicturesButton)</onclick>
-						<selected>Skin.HasSetting(KidsHomeMenuNoPicturesButton)</selected>
+						<onclick>Skin.ToggleSetting(MasterHomeMenuNoPicturesButton)</onclick>
+						<selected>Skin.HasSetting(MasterHomeMenuNoPicturesButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -589,8 +589,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31111] - $LOCALIZE[24001]</label>
-						<onclick>Skin.ToggleSetting(KidsHomeMenuNoProgramsButton)</onclick>
-						<selected>Skin.HasSetting(KidsHomeMenuNoProgramsButton)</selected>
+						<onclick>Skin.ToggleSetting(MasterHomeMenuNoProgramsButton)</onclick>
+						<selected>Skin.HasSetting(MasterHomeMenuNoProgramsButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -602,8 +602,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31111] - $LOCALIZE[8]</label>
-						<onclick>Skin.ToggleSetting(KidsHomeMenuNoWeatherButton)</onclick>
-						<selected>Skin.HasSetting(KidsHomeMenuNoWeatherButton)</selected>
+						<onclick>Skin.ToggleSetting(MasterHomeMenuNoWeatherButton)</onclick>
+						<selected>Skin.HasSetting(MasterHomeMenuNoWeatherButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -615,8 +615,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31111] - $LOCALIZE[15016]</label>
-						<onclick>Skin.ToggleSetting(KidsHomeMenuNoGamesButton)</onclick>
-						<selected>Skin.HasSetting(KidsHomeMenuNoGamesButton)</selected>
+						<onclick>Skin.ToggleSetting(MasterHomeMenuNoGamesButton)</onclick>
+						<selected>Skin.HasSetting(MasterHomeMenuNoGamesButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -747,12 +747,12 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>- $LOCALIZE[31113]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(KidsCustomBackgroundPath)][/COLOR]</label2>
+						<label2>[COLOR=selected]$INFO[Skin.String(MasterCustomBackgroundPath)][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetImage(KidsCustomBackgroundPath)</onclick>
+						<onclick>Skin.SetImage(MasterCustomBackgroundPath)</onclick>
 						<enable>Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
 				</control>
