@@ -628,7 +628,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>- Background Path Kids:</label>
+						<label>- $LOCALIZE[31113]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(CustomKidsBackgroundPath)][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
