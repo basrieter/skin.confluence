@@ -629,12 +629,12 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>- $LOCALIZE[31113]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(CustomKidsBackgroundPath)][/COLOR]</label2>
+						<label2>[COLOR=selected]$INFO[Skin.String(KidsCustomBackgroundPath)][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetImage(CustomKidsBackgroundPath)</onclick>
+						<onclick>Skin.SetImage(KidsCustomBackgroundPath)</onclick>
 						<enable>Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
 				</control>

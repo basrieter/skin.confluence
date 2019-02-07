@@ -24,8 +24,8 @@
 			<description>User Set Background Image Kids</description>
 			<include>BackgroundDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.String(CustomKidsBackgroundPath)]</texture>
-			<visible>!System.IsMaster + Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomKidsBackgroundPath))</visible>
+			<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.String(KidsCustomBackgroundPath)]</texture>
+			<visible>!System.IsMaster + Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(KidsCustomBackgroundPath))</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="image">
