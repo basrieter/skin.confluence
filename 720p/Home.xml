@@ -981,21 +981,21 @@
 						<onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
+						<visible>[!Skin.HasSetting(HomeMenuNoWeatherButton) + System.IsMaster] | [!Skin.HasSetting(KidsHomeMenuNoWeatherButton) + !System.IsMaster]</visible>
 					</item>
 					<item id="4">
 						<label>31951</label>
 						<onclick>ActivateWindow(Pictures)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
+						<visible>[!Skin.HasSetting(HomeMenuNoPicturesButton) + System.IsMaster] | [!Skin.HasSetting(KidsHomeMenuNoPicturesButton) + !System.IsMaster]</visible>
 					</item>
 					<item id="14">
 						<label>31001</label>
 						<onclick>ActivateWindow(Games)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>!Skin.HasSetting(HomeMenuNoGamesButton)</visible>
+						<visible>[!Skin.HasSetting(HomeMenuNoGamesButton) + System.IsMaster] | [!Skin.HasSetting(KidsHomeMenuNoGamesButton) + !System.IsMaster]</visible>
 					</item>
 					<item id="13">
 						<label>31960</label>
@@ -1017,21 +1017,21 @@
 						<onclick condition="!String.IsEqual(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos,root)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
+						<visible>[!Skin.HasSetting(HomeMenuNoVideosButton) + System.IsMaster] | [!Skin.HasSetting(KidsHomeMenuNoVideosButton) + !System.IsMaster]</visible>
 					</item>
 					<item id="10">
 						<label>31954</label>
 						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
+						<visible>[!Skin.HasSetting(HomeMenuNoMovieButton) + System.IsMaster] | [!Skin.HasSetting(KidsHomeMenuNoMovieButton) + !System.IsMaster] + Library.HasContent(Movies)</visible>
 					</item>
 					<item id="11">
 						<label>31955</label>
 						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
+						<visible>[!Skin.HasSetting(HomeMenuNoTVShowButton) + System.IsMaster] | [!Skin.HasSetting(KidsHomeMenuNoTVShowButton) + !System.IsMaster] + Library.HasContent(TVShows)</visible>
 					</item>
 					<item id="3">
 						<label>31956</label>
@@ -1040,7 +1040,7 @@
 						<onclick condition="!System.IsMaster,True)">ActivateWindow(10502,&quot;special://profile/playlists/music/Kids.xsp&quot;,return)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+						<visible>[!Skin.HasSetting(HomeMenuNoMusicButton) + System.IsMaster] | [!Skin.HasSetting(KidsHomeMenuNoMusicButton) + !System.IsMaster]</visible>
 					</item>
 					<item id="1">
 						<label>31957</label>
@@ -1048,7 +1048,7 @@
 						<onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
 						<icon/>
 						<thumb/>
-						<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
+						<visible>[!Skin.HasSetting(HomeMenuNoProgramsButton) + System.IsMaster] | [!Skin.HasSetting(KidsHomeMenuNoProgramsButton) + !System.IsMaster]</visible>
 					</item>
 					<item id="6">
 						<label>31958</label>
