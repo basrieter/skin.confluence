@@ -409,7 +409,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-
 					<control type="radiobutton" id="222">
 						<description>Hide Movies Button</description>
 						<width>750</width>
@@ -424,34 +423,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Library.HasContent(Movies)</enable>
 					</control>
-					<control type="radiobutton" id="241">
-						<description>Use Movies playlist</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31143] $LOCALIZE[20342] $LOCALIZE[31144]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuMovieUsePlaylist)</onclick>
-						<selected>Skin.HasSetting(HomeMenuMovieUsePlaylist)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>Library.HasContent(Movies)</enable>
-					</control>
-					<control type="button" id="242">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>- $LOCALIZE[20342] $LOCALIZE[31145]: </label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeMenuMoviePlaylist)][/COLOR]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetFile(HomeMenuMoviePlaylist,*.xsp,special://profile/playlists/)</onclick>
-						<enable>Skin.HasSetting(HomeMenuMovieUsePlaylist)</enable>
-					</control>
-
 					<control type="radiobutton" id="223">
 						<description>Hide TV Shows Button</description>
 						<width>750</width>
@@ -466,34 +437,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Library.HasContent(TVShows)</enable>
 					</control>
-					<control type="radiobutton" id="243">
-						<description>Use TV Shows playlist</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31143] $LOCALIZE[20343] $LOCALIZE[31144]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuTVShowUsePlaylist)</onclick>
-						<selected>Skin.HasSetting(HomeMenuTVShowUsePlaylist)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>Library.HasContent(Movies)</enable>
-					</control>
-					<control type="button" id="244">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>- $LOCALIZE[20343] $LOCALIZE[31145]: </label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeMenuTVShowPlaylist)][/COLOR]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetFile(HomeMenuTVShowPlaylist,*.xsp,special://profile/playlists/)</onclick>
-						<enable>Skin.HasSetting(HomeMenuTVShowUsePlaylist)</enable>
-					</control>
-
 					<control type="radiobutton" id="224">
 						<description>Hide Music Button</description>
 						<width>750</width>
@@ -507,33 +450,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="245">
-						<description>Use TV Shows playlist</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31143] $LOCALIZE[2] $LOCALIZE[31144]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuMusicUsePlaylist)</onclick>
-						<selected>Skin.HasSetting(HomeMenuMusicUsePlaylist)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="button" id="246">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>- $LOCALIZE[2] $LOCALIZE[31145]: </label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeMenuMusicPlaylist)][/COLOR]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetFile(HomeMenuMusicPlaylist,*.xsp,special://profile/playlists/)</onclick>
-						<enable>Skin.HasSetting(HomeMenuMusicUsePlaylist)</enable>
-					</control>
-
 					<control type="radiobutton" id="225">
 						<description>Hide Pictures Button</description>
 						<width>750</width>
@@ -598,6 +514,98 @@
 						<selected>Skin.HasSetting(HomeMenuNoSystemButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+
+					<!-- Playlist buttons -->
+					<control type="label" id="247">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>31115</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="241">
+						<description>Use Movies playlist</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31143] $LOCALIZE[20342] $LOCALIZE[31144]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuMovieUsePlaylist)</onclick>
+						<selected>Skin.HasSetting(HomeMenuMovieUsePlaylist)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>Library.HasContent(Movies)</enable>
+					</control>
+					<control type="button" id="242">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[20342] $LOCALIZE[31145]: </label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeMenuMoviePlaylist)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetFile(HomeMenuMoviePlaylist,*.xsp,special://profile/playlists/)</onclick>
+						<enable>Skin.HasSetting(HomeMenuMovieUsePlaylist)</enable>
+					</control>
+					<control type="radiobutton" id="243">
+						<description>Use TV Shows playlist</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31143] $LOCALIZE[20343] $LOCALIZE[31144]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuTVShowUsePlaylist)</onclick>
+						<selected>Skin.HasSetting(HomeMenuTVShowUsePlaylist)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>Library.HasContent(Movies)</enable>
+					</control>
+					<control type="button" id="244">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[20343] $LOCALIZE[31145]: </label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeMenuTVShowPlaylist)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetFile(HomeMenuTVShowPlaylist,*.xsp,special://profile/playlists/)</onclick>
+						<enable>Skin.HasSetting(HomeMenuTVShowUsePlaylist)</enable>
+					</control>
+					<control type="radiobutton" id="245">
+						<description>Use Music playlist</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31143] $LOCALIZE[2] $LOCALIZE[31144]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuMusicUsePlaylist)</onclick>
+						<selected>Skin.HasSetting(HomeMenuMusicUsePlaylist)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="button" id="246">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[2] $LOCALIZE[31145]: </label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeMenuMusicPlaylist)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetFile(HomeMenuMusicPlaylist,*.xsp,special://profile/playlists/)</onclick>
+						<enable>Skin.HasSetting(HomeMenuMusicUsePlaylist)</enable>
 					</control>
 
 					<!-- Master buttons -->

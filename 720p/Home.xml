@@ -817,7 +817,7 @@
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9016</onleft>
 					<onright>9016</onright>
-					<visible>Container(9000).HasFocus(10) + !String.IsEmpty(Container(90160).ListItemNoWrap(0).Label)</visible>
+					<visible>Container(9000).HasFocus(10) + !String.IsEmpty(Container(90160).ListItemNoWrap(0).Label) + [System.IsMaster | !Skin.HasSetting(HomeMenuMovieUsePlaylist)]</visible>
 					<!-- Buttons for the grouplist -->
 					<include>HomeSubMenuMovies</include>
 				</control>
@@ -825,7 +825,7 @@
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9017</onleft>
 					<onright>9017</onright>
-					<visible>Container(9000).HasFocus(11) + !String.IsEmpty(Container(90170).ListItemNoWrap(0).Label)</visible>
+					<visible>Container(9000).HasFocus(11) + !String.IsEmpty(Container(90170).ListItemNoWrap(0).Label) + [System.IsMaster | !Skin.HasSetting(HomeMenuTVShowUsePlaylist)]</visible>
 					<!-- Buttons for the grouplist -->
 					<include>HomeSubMenuTVShows</include>
 				</control>
@@ -833,7 +833,7 @@
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9011</onleft>
 					<onright>9011</onright>
-					<visible>Container(9000).HasFocus(3) + !String.IsEmpty(Container(90110).ListItemNoWrap(0).Label) + System.IsMaster</visible>
+					<visible>Container(9000).HasFocus(3) + !String.IsEmpty(Container(90110).ListItemNoWrap(0).Label) + [System.IsMaster | !Skin.HasSetting(HomeMenuMusicUsePlaylist)]</visible>
 					<!-- Buttons for the grouplist -->
 					<include>HomeSubMenuMusic</include>
 				</control>
