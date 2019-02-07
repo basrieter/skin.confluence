@@ -1021,23 +1021,25 @@
 					</item>
 					<item id="10">
 						<label>31954</label>
-						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<onclick condition="System.IsMaster | !Skin.HasSetting(HomeMenuMovieUsePlaylist)">ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<onclick condition="!System.IsMaster + Skin.HasSetting(HomeMenuMovieUsePlaylist)">ActivateWindow(Videos,$INFO[Skin.String(HomeMenuMoviePlaylist)],return)</onclick>
 						<icon/>
 						<thumb/>
 						<visible>[[!Skin.HasSetting(HomeMenuNoMovieButton) + !System.IsMaster] | [!Skin.HasSetting(MasterHomeMenuNoMovieButton) + System.IsMaster]] + Library.HasContent(Movies)</visible>
 					</item>
 					<item id="11">
 						<label>31955</label>
-						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<onclick condition="System.IsMaster | !Skin.HasSetting(HomeMenuTVShowUsePlaylist)">ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<onclick condition="!System.IsMaster + Skin.HasSetting(HomeMenuTVShowUsePlaylist)">ActivateWindow(Videos,$INFO[Skin.String(HomeMenuTVShowPlaylist)],return)</onclick>
 						<icon/>
 						<thumb/>
 						<visible>[[!Skin.HasSetting(HomeMenuNoTVShowButton) + !System.IsMaster] | [!Skin.HasSetting(MasterHomeMenuNoTVShowButton) + System.IsMaster]] + Library.HasContent(TVShows)</visible>
 					</item>
 					<item id="3">
 						<label>31956</label>
-						<onclick condition="String.IsEqual(Window.Property(MusicDirectLink) + System.IsMaster,True)">ActivateWindow(Music)</onclick>
-						<onclick condition="!String.IsEqual(Window.Property(MusicDirectLink) + System.IsMaster,True)">ActivateWindow(Music,root)</onclick>
-						<onclick condition="!System.IsMaster,True)">ActivateWindow(10502,&quot;special://profile/playlists/music/Kids.xsp&quot;,return)</onclick>
+						<onclick condition="[System.IsMaster | !Skin.HasSetting(HomeMenuMusicUsePlaylist)] + String.IsEqual(Window.Property(MusicDirectLink),True)">ActivateWindow(Music)</onclick>
+						<onclick condition="[System.IsMaster | !Skin.HasSetting(HomeMenuMusicUsePlaylist)] + !String.IsEqual(Window.Property(MusicDirectLink),True)">ActivateWindow(Music,root)</onclick>
+						<onclick condition="!System.IsMaster + Skin.HasSetting(HomeMenuMusicUsePlaylist)">ActivateWindow(Videos,$INFO[Skin.String(HomeMenuMusicPlaylist)],return)</onclick>
 						<icon/>
 						<thumb/>
 						<visible>[!Skin.HasSetting(HomeMenuNoMusicButton) + !System.IsMaster] | [!Skin.HasSetting(MasterHomeMenuNoMusicButton) + System.IsMaster]</visible>
