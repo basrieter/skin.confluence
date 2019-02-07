@@ -502,6 +502,124 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					
+					<!-- Kids buttons -->
+					<control type="label" id="230">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>31209</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="231">
+						<description>Hide Videos Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[3]</label>
+						<onclick>Skin.ToggleSetting(KidsHomeMenuNoVideosButton)</onclick>
+						<selected>Skin.HasSetting(KidsHomeMenuNoVideosButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="232">
+						<description>Hide Movies Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[20342] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
+						<onclick>Skin.ToggleSetting(KidsHomeMenuNoMovieButton)</onclick>
+						<selected>Skin.HasSetting(KidsHomeMenuNoMovieButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>Library.HasContent(Movies)</enable>
+					</control>
+					<control type="radiobutton" id="233">
+						<description>Hide TV Shows Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[20343] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
+						<onclick>Skin.ToggleSetting(KidsHomeMenuNoTVShowButton)</onclick>
+						<selected>Skin.HasSetting(KidsHomeMenuNoTVShowButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>Library.HasContent(TVShows)</enable>
+					</control>
+					<control type="radiobutton" id="234">
+						<description>Hide Music Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[2]</label>
+						<onclick>Skin.ToggleSetting(KidsHomeMenuNoMusicButton)</onclick>
+						<selected>Skin.HasSetting(KidsHomeMenuNoMusicButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="235">
+						<description>Hide Pictures Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[1]</label>
+						<onclick>Skin.ToggleSetting(KidsHomeMenuNoPicturesButton)</onclick>
+						<selected>Skin.HasSetting(KidsHomeMenuNoPicturesButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="236">
+						<description>Hide Programs Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[24001]</label>
+						<onclick>Skin.ToggleSetting(KidsHomeMenuNoProgramsButton)</onclick>
+						<selected>Skin.HasSetting(KidsHomeMenuNoProgramsButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="238">
+						<description>Hide Weather Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[8]</label>
+						<onclick>Skin.ToggleSetting(KidsHomeMenuNoWeatherButton)</onclick>
+						<selected>Skin.HasSetting(KidsHomeMenuNoWeatherButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="239">
+						<description>Hide Games Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[15016]</label>
+						<onclick>Skin.ToggleSetting(KidsHomeMenuNoGamesButton)</onclick>
+						<selected>Skin.HasSetting(KidsHomeMenuNoGamesButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>
