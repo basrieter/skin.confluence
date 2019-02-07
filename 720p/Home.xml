@@ -833,7 +833,7 @@
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9011</onleft>
 					<onright>9011</onright>
-					<visible>Container(9000).HasFocus(3) + !String.IsEmpty(Container(90110).ListItemNoWrap(0).Label)</visible>
+					<visible>Container(9000).HasFocus(3) + !String.IsEmpty(Container(90110).ListItemNoWrap(0).Label) + System.IsMaster</visible>
 					<!-- Buttons for the grouplist -->
 					<include>HomeSubMenuMusic</include>
 				</control>
@@ -1035,8 +1035,9 @@
 					</item>
 					<item id="3">
 						<label>31956</label>
-						<onclick condition="String.IsEqual(Window.Property(MusicDirectLink),True)">ActivateWindow(Music)</onclick>
-						<onclick condition="!String.IsEqual(Window.Property(MusicDirectLink),True)">ActivateWindow(Music,root)</onclick>
+						<onclick condition="String.IsEqual(Window.Property(MusicDirectLink) + System.IsMaster,True)">ActivateWindow(Music)</onclick>
+						<onclick condition="!String.IsEqual(Window.Property(MusicDirectLink) + System.IsMaster,True)">ActivateWindow(Music,root)</onclick>
+						<onclick condition="!System.IsMaster,True)">ActivateWindow(10502,&quot;special://profile/playlists/music/Kids.xsp&quot;,return)</onclick>
 						<icon/>
 						<thumb/>
 						<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>

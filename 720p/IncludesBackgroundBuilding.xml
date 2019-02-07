@@ -16,7 +16,16 @@
 			<include>BackgroundDimensions</include>
 			<aspectratio>scale</aspectratio>
 			<texture>$INFO[Skin.String(CustomBackgroundPath)]</texture>
-			<visible>Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))</visible>
+			<visible>System.IsMaster + Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))</visible>
+			<include>VisibleFadeEffect</include>
+		</control>
+        <control type="image">
+			<depth>DepthBackground</depth>
+			<description>User Set Background Image Kids</description>
+			<include>BackgroundDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.String(CustomKidsBackgroundPath)]</texture>
+			<visible>!System.IsMaster + Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomKidsBackgroundPath))</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="image">
