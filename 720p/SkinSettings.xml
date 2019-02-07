@@ -502,7 +502,20 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
+					<control type="radiobutton" id="240">
+						<description>Hide Settings Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[31114]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoSystemButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoSystemButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+
 					<!-- Master buttons -->
 					<control type="label" id="230">
 						<width>750</width>

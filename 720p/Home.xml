@@ -1062,6 +1062,7 @@
 						<onclick>ActivateWindow(Settings)</onclick>
 						<icon/>
 						<thumb/>
+						<visible>[!Skin.HasSetting(HomeMenuNoSystemButton) + !System.IsMaster] | System.IsMaster</visible>
 					</item>
 				</content>
 			</control>

@@ -276,7 +276,11 @@ msgctxt "#31113"
 msgid "Background path Master:"
 msgstr ""
 
-#empty strings from id 31114 to 31115
+msgctxt "#31114"
+msgid "System"
+msgstr ""
+
+#empty strings from id 31115 to 31115
 
 msgctxt "#31116"
 msgid "Show recently added albums"
