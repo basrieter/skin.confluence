@@ -1039,7 +1039,7 @@
 						<label>31956</label>
 						<onclick condition="[System.IsMaster | !Skin.HasSetting(HomeMenuMusicUsePlaylist)] + String.IsEqual(Window.Property(MusicDirectLink),True)">ActivateWindow(Music)</onclick>
 						<onclick condition="[System.IsMaster | !Skin.HasSetting(HomeMenuMusicUsePlaylist)] + !String.IsEqual(Window.Property(MusicDirectLink),True)">ActivateWindow(Music,root)</onclick>
-						<onclick condition="!System.IsMaster + Skin.HasSetting(HomeMenuMusicUsePlaylist)">ActivateWindow(Videos,$INFO[Skin.String(HomeMenuMusicPlaylist)],return)</onclick>
+						<onclick condition="!System.IsMaster + Skin.HasSetting(HomeMenuMusicUsePlaylist)">ActivateWindow(Music,$INFO[Skin.String(HomeMenuMusicPlaylist)],return)</onclick>
 						<icon/>
 						<thumb/>
 						<visible>[!Skin.HasSetting(HomeMenuNoMusicButton) + !System.IsMaster] | [!Skin.HasSetting(MasterHomeMenuNoMusicButton) + System.IsMaster]</visible>
